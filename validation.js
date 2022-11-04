@@ -14,12 +14,10 @@ function validation(form) {
         : "Correct!!!";
     },
   };
-  const formValidation = $(form);
+  var formValidation = document.querySelector(form);
+  console.log(formValidation);
   if (formValidation) {
-    const input = formValidation
-      .children("div")
-      .children(".input__form__login");
-    
-    
+    var input = formValidation.querySelectorALL("input");
+    console.log(input);
   }
 }
