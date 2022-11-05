@@ -75,24 +75,24 @@ $(window).ready(function () {
     $(this).addClass("active_nav");
   });
 
-  const inputFormLogin = $(".input__form__login");
+  const inputFormLogin = $(".input__form");
   inputFormLogin.blur(function () {
     if ($(this).val() != "") {
       $(this)
         .parent()
-        .children(".icon__login__form")
+        .children(".icon__form")
         .css("transform", "translate(-10px, -250%)");
     } else {
       $(this)
         .parent()
-        .children(".icon__login__form")
+        .children(".icon__form")
         .css("transform", "translateY(-50%)");
     }
   });
   inputFormLogin.focus(function () {
     $(this)
       .parent()
-      .children(".icon__login__form")
+      .children(".icon__form")
       .css("transform", "translate(-10px, -250%)");
   });
 
@@ -122,4 +122,20 @@ $(window).ready(function () {
     $(this).removeClass("show");
     $(this).parent().parent().children("input").attr("type", "text");
   });
+
+  const buttonRegister = $(".button__register");
+  const buttonlogin = $(".button__login");
+  buttonRegister.click(function (e) {
+    e.preventDefault();
+    showFormOptions(buttonRegister);
+  });
+  buttonlogin.click(function (e) {
+    e.preventDefault();
+    showFormOptions(buttonlogin);
+  });
+
+  function showFormOptions(element) {
+    $(".form__create.form__login.hidden").removeClass("hidden");
+    element.parent().parent().addClass("hidden");
+  }
 });

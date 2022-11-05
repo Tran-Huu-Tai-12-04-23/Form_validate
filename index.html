@@ -1,299 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="resetcss.css" />
     <link rel="stylesheet" href="index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="form.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <div class="header container">
-            <div class="header__util">
-                <h1 class="name__shop">WebShop</h1>
-                <div class="header__search">
-                    <input type="search" name="search" class="input__search" placeholder="Search" />
-                    <div class="search__nav">
-                        <i class="icon__search bx bx-search"></i>
-                        <!-- <label for="search">Search</label> -->
-                    </div>
-                </div>
-                <div class="header__wallet">
-                    <i class="bx bx-coin-stack icon__wallet"></i>
-                    <h1>Coins</h1>
-                    <span>123.222</span>
-                </div>
+      <div class="header container">
+        <div class="header__util">
+          <h1 class="name__shop">WebShop</h1>
+          <div class="header__search">
+            <input
+              type="search"
+              name="search"
+              class="input__search"
+              placeholder="Search"
+            />
+            <div class="search__nav">
+              <i class="icon__search bx bx-search"></i>
+              <!-- <label for="search">Search</label> -->
             </div>
-            <div class="header__info">
-                <i class="bx bxs-shopping-bag"></i>
-                <i class="bx bxs-heart"></i>
-                <i class="bx bxs-bell"></i>
-                <div class="avatar">
-                    <i class="bx bx-menu icon__active">
+          </div>
+          <div class="header__wallet">
+            <i class="bx bx-coin-stack icon__wallet"></i>
+            <h1>Coins</h1>
+            <span>123.222</span>
+          </div>
+        </div>
+        <div class="header__info">
+          <i class="bx bxs-shopping-bag"></i>
+          <i class="bx bxs-heart"></i>
+          <i class="bx bxs-bell"></i>
+          <div class="avatar">
+            <i class="bx bx-menu icon__active">
               <ul class="menu__user">
                 <a href="">
                   <i class="bx bx-log-in"></i>
-                    <li href="">Login</li>
-                    </a>
-                    <a href="">
-                        <i class="bx bx-edit-alt"></i>
-                        <li href="">Register</li>
-                    </a>
-                    <a href="">
-                        <i class="bx bx-user"></i>
-                        <li href="">Profile</li>
-                    </a>
-                    <a href="">
-                        <i class="bx bx-log-out"></i>
-                        <li href="">Log Out</li>
-                    </a>
-                    <i class="bx bx-x icon__close"></i>
-                    </ul>
-                    </i>
+                  <li href="">Login</li>
+                </a>
+                <a href="">
+                  <i class="bx bx-edit-alt"></i>
+                  <li href="">Register</li>
+                </a>
+                <a href="">
+                  <i class="bx bx-user"></i>
+                  <li href="">Profile</li>
+                </a>
+                <a href="">
+                  <i class="bx bx-log-out"></i>
+                  <li href="">Log Out</li>
+                </a>
+                <i class="bx bx-x icon__close"></i>
+              </ul>
+            </i>
 
-                    <img src="./1.webp" alt="" class="avatar__img" />
-                    <span class="name__user">Name</span>
-                </div>
-            </div>
+            <img src="./1.webp" alt="" class="avatar__img" />
+            <span class="name__user">Name</span>
+          </div>
         </div>
-        <div class="wrap__content hidden">
-            <div class="slider container">
-                <i class="bx bx-chevron-left icon__pre"></i>
-                <i class="bx bx-chevron-right icon__next"></i>
-                <div class="slider__list">
-                    <div class="wrap__slider__list">
-                        <img class="slider__img" src="https://cf.shopee.vn/file/4016f05ca91e2f581251fb2cbeaa0904_xxhdpi" alt="" />
-                        <img class="slider__img" src="https://cf.shopee.vn/file/7864458d23c0ca56db2d0a5d06341b7d_xxhdpi" alt="" />
-                        <img class="slider__img" src="https://cf.shopee.vn/file/895d75032eaa679113b54606a7acc297_xxhdpi" alt="" />
-                        <img class="slider__img" src="https://cf.shopee.vn/file/aa13ac9534502a7ff1d18250ffb0aad5_xxhdpi" alt="" />
-                    </div>
-                    <!-- <div class="nav__img">
+      </div>
+      <div class="wrap__content hidden">
+        <div class="slider container">
+          <i class="bx bx-chevron-left icon__pre"></i>
+          <i class="bx bx-chevron-right icon__next"></i>
+          <div class="slider__list">
+            <div class="wrap__slider__list">
+              <img
+                class="slider__img"
+                src="https://cf.shopee.vn/file/4016f05ca91e2f581251fb2cbeaa0904_xxhdpi"
+                alt=""
+              />
+              <img
+                class="slider__img"
+                src="https://cf.shopee.vn/file/7864458d23c0ca56db2d0a5d06341b7d_xxhdpi"
+                alt=""
+              />
+              <img
+                class="slider__img"
+                src="https://cf.shopee.vn/file/895d75032eaa679113b54606a7acc297_xxhdpi"
+                alt=""
+              />
+              <img
+                class="slider__img"
+                src="https://cf.shopee.vn/file/aa13ac9534502a7ff1d18250ffb0aad5_xxhdpi"
+                alt=""
+              />
+            </div>
+            <!-- <div class="nav__img">
               <div class="active" data-id="1"></div>
               <div data-id="2"></div>
               <div data-id="3"></div>
               <div data-id="4"></div>
             </div> -->
-                </div>
-            </div>
-
-            <div class="content container">
-                <div class="content__navigation">
-                    <ul>
-                        <li class="active_nav">All Products</li>
-                        <li>Top sales</li>
-                        <li>Promo</li>
-                        <li>La Crystal</li>
-                        <li>Cleanizer</li>
-                        <li>Tonnerb</li>
-                        <li>Serumb</li>
-                    </ul>
-                </div>
-                <div class="content__product">
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content__item">
-                        <img src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24" alt="" />
-                        <div class="content__item__info">
-                            <div class="content__item__info__title">
-                                <h5>Ban chai</h5>
-                                <p>
-                                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn phím cơ, cherry profile
-                                </p>
-                            </div>
-                            <div class="content__item__info__icon">
-                                <span> $96.5 </span>
-                                <button class="button__primary">Buy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
 
-        <div class="wrap__form mt_height">
-            <form id="form__login__validate" class="form__login" action="">
-                <h1 class="title__login">Login</h1>
-                <div>
-                    <input class="input__form__login" type="text" name="username" placeholder="" rules="required" />
-                    <span class="show__validation hidden error"></span>
-                    <div class="icon__login__form">
-                        <i class="bx bx-user"></i>
-                        <label for="username">User name</label>
-                    </div>
+        <div class="content container">
+          <div class="content__navigation">
+            <ul>
+              <li class="active_nav">All Products</li>
+              <li>Top sales</li>
+              <li>Promo</li>
+              <li>La Crystal</li>
+              <li>Cleanizer</li>
+              <li>Tonnerb</li>
+              <li>Serumb</li>
+            </ul>
+          </div>
+          <div class="content__product">
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
                 </div>
-                <div>
-                    <input class="input__form__login" type="password" name="password" placeholder="" rules="required|min:6|pass" />
-                    <span class="show__validation hidden error"></span>
-                    <div class="icon__login__form">
-                        <i class="bx bx-lock-alt"></i>
-                        <label for="password">Enter password</label>
-                    </div>
-                    <div class="icon__pass">
-                        <i class="fa-regular fa-eye show__pass"></i>
-                        <i class="fa-regular fa-eye-slash hidden__pass"></i>
-                    </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
                 </div>
-                <div>
-                    <input class="input__form__login" type="password" name="confirmpassword" placeholder="" rules="required|min:6|pass" />
-                    <span class="show__validation hidden error"></span>
-                    <div class="icon__login__form">
-                        <i class="bx bx-lock-alt"></i>
-                        <label for="confirmpassword">Confirm password</label>
-                    </div>
-                    <div class="icon__pass">
-                        <i class="fa-regular fa-eye show__pass"></i>
-                        <i class="fa-regular fa-eye-slash hidden__pass"></i>
-                    </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
                 </div>
-                <nav class="mt_12">
-                    <input type="checkbox" class="input__remember" placeholder=" " />
-                    <label for="username">Remember me</label>
-                </nav>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
+                </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
+                </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
+                </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
+                </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
+                </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
+                </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+            <div class="content__item">
+              <img
+                src="https://cf.shopee.vn/file/c8e884d408ea46d580438efb448c6a24"
+                alt=""
+              />
+              <div class="content__item__info">
+                <div class="content__item__info__title">
+                  <h5>Ban chai</h5>
+                  <p>
+                    Keycap Japan Font siêu rẻ, nhựa PBT in dyesub, 125 nút bàn
+                    phím cơ, cherry profile
+                  </p>
+                </div>
+                <div class="content__item__info__icon">
+                  <span> $96.5 </span>
+                  <button class="button__primary">Buy</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                <button type="submit " class="button__primary button__form">
+      <div class="wrap__form mt_height">
+        <form
+          id="form__register__validate"
+          class="form__create form__login"
+          action=""
+        >
+          <h1 class="title__form">Register</h1>
+          <div>
+            <input
+              class="input__form"
+              type="text"
+              name="username"
+              placeholder=""
+              rules="required"
+            />
+            <span class="show__validation hidden error"></span>
+            <div class="icon__form">
+              <i class="bx bx-user"></i>
+              <label for="username">User name</label>
+            </div>
+          </div>
+          <div>
+            <input
+              class="input__form"
+              type="password"
+              name="password"
+              placeholder=""
+              rules="required|min:6|pass"
+            />
+            <span class="show__validation hidden error"></span>
+            <div class="icon__form">
+              <i class="bx bx-lock-alt"></i>
+              <label for="password">Enter password</label>
+            </div>
+            <div class="icon__pass">
+              <i class="fa-regular fa-eye show__pass"></i>
+              <i class="fa-regular fa-eye-slash hidden__pass"></i>
+            </div>
+          </div>
+          <div>
+            <input
+              class="input__form"
+              type="password"
+              name="confirmpassword"
+              placeholder=""
+              rules="required|min:6|pass"
+            />
+            <span class="show__validation hidden error"></span>
+            <div class="icon__form">
+              <i class="bx bx-lock-alt"></i>
+              <label for="confirmpassword">Confirm password</label>
+            </div>
+            <div class="icon__pass">
+              <i class="fa-regular fa-eye show__pass"></i>
+              <i class="fa-regular fa-eye-slash hidden__pass"></i>
+            </div>
+          </div>
+          <nav class="mt_12 mb_24">
+            <input type="checkbox" class="input__remember" placeholder=" " />
+            <label for="username">Remember me</label>
+          </nav>
+
+          <button type="submit " class="button__primary button__form__submit">
             Submit
           </button>
-                <div class="nav__register">
-                    <a href="">Help?</a>
-                    <button type="submit " class="button__primary button__register">
+          <div class="nav__register">
+            <a href="">Have you account?</a>
+            <button
+              type="submit "
+              class="button__primary button__login button__form"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <form
+          id="form__login__validate"
+          class="form__create form__login hidden"
+          action=""
+        >
+          <h1 class="title__form">Login</h1>
+          <div>
+            <input
+              class="input__form"
+              type="text"
+              name="username"
+              placeholder=""
+              rules="required"
+            />
+            <span class="show__validation hidden error"></span>
+            <div class="icon__form">
+              <i class="bx bx-user"></i>
+              <label for="username">User name</label>
+            </div>
+          </div>
+          <div>
+            <input
+              class="input__form"
+              type="password"
+              name="password"
+              placeholder=""
+              rules="required|min:6"
+            />
+            <span class="show__validation hidden error"></span>
+            <div class="icon__form">
+              <i class="bx bx-lock-alt"></i>
+              <label for="password">Enter password</label>
+            </div>
+            <div class="icon__pass">
+              <i class="fa-regular fa-eye show__pass"></i>
+              <i class="fa-regular fa-eye-slash hidden__pass"></i>
+            </div>
+          </div>
+          <nav class="mt_12 mb_24">
+            <input type="checkbox" class="input__remember" placeholder=" " />
+            <label for="username">Remember me</label>
+          </nav>
+
+          <button type="submit " class="button__primary button__form__submit">
+            Submit
+          </button>
+          <div class="nav__login">
+            <a href="">Help?</a>
+            <button
+              type="submit "
+              class="button__primary button__form button__register"
+            >
               Register
             </button>
-                </div>
-            </form>
-        </div>
+          </div>
+        </form>
+      </div>
     </div>
 
-    <script src="./index.js"></script>
     <script src="validation.js"></script>
     <script>
-        validation("#form__login__validate");
+      validation("#form__login__validate");
+      validation("#form__register__validate");
     </script>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
